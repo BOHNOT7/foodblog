@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="multiple_page.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
+	<link rel="icon" href="BM.png">
+	<title>Nangyithoke</title>
+	<style type="text/css">
+		input[type=checkbox]{
+			transform: scale(1.5);
+		}
+	/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+			.card-in-content{
+				width: 100%;
+				margin: 0;
+			}
+			.vertical-line-text{
+				margin-left: 0;
+				margin-top: 600px;
+				width: 95%;
+				padding: 10px;
+			}
+			.direction {
+				float: left;
+				display: block;
+				width: 100%;
+				margin: 0;
+				margin-top: 10px;
+			}
+			.ingredients{
+				width: 100%;
+				display: block;
+				float: left;
+				margin-top: -180px;
+			}
+			.card{
+				display: block;
+				width: 40%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-left: 30px;
+			}
+			.youtube{
+				display: none;
+			}
+		} 
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+			.card-in-content{
+				width: 50%;
+				margin-left: 150px;
+			}
+			.vertical-line-text{
+				margin-left: 0;
+				width: 100%;
+				margin-top: 470px;
+				padding: 10px;
+			}
+			.direction {
+				width: 50%;
+				margin: 5px;
+				margin-top: -120px;
+			}
+			.ingredients{
+				width: 50%;
+				margin-top: -120px;
+			}
+			.card{
+				display: inline-block;
+				width: 40%;
+			}
+			.youtube{
+				display: none;
+			}
+		} 
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+			.card-in-content{
+				width: 50%;
+				margin-left: 150px;
+			}
+			.vertical-line-text{
+				margin-left: 0;
+				width: 98%;
+				margin-top: 540px;
+				padding: 10px;
+			}
+			.direction {
+				width: 50%;
+				margin: 5px;
+				margin-top: -120px;
+			}
+			.ingredients{
+				width: 50%;
+				margin-top: -120px;
+			}
+			.card{
+				display: block;
+				width: 35%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-left: 60px;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 600px) {
+			.vertical-line-text{
+				margin-top: 590px;
+				width: 98%;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px){
+			.vertical-line-text{
+				margin-top: 530px;
+				width: 98%;
+			}
+			.card{
+				display: block;
+				width: 30%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-left: 90px;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 768px) {
+			.vertical-line-text{
+				margin-top: 630px;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 850px) {
+			.card{
+				width: 20%;
+				margin-left: auto;
+				margin-left: auto;
+				display: block;
+				margin-left: 34px;
+			}
+			.card-in-content{
+				margin-left: 220px;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+			.card-in-content{
+				width: 40%;
+				margin-left: 30px;
+			}
+			.vertical-line-text{
+				margin-top: 700px;
+				width: 50%;
+				margin-left: 470px;
+				margin-bottom: 100px;
+				margin-top: 200px;
+			}
+			.card{
+				width: 20%;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1100px) {
+		 	 	*{
+				background: #efc8b1;
+				color: #8a6626;
+				font-family: Sora;
+			}
+			a {
+        text-decoration: none;
+      }
+      li {
+        ist-style: none;
+      }
+			.navbar {
+	      display: flex;
+	      align-items: center;
+	      justify-content: space-between;
+	      padding: 20px;
+      }
+      .nav-links a {
+        color: #8a6626;
+      }
+      .logo img{
+        width: 200px;
+        display: inline-block;
+        float: left;
+      }
+      .menu {
+       	display: flex;
+        gap: 1em;
+        font-size: 18px;
+      }
+			.menu li a:hover{
+        color: #A32F5D;
+    	}
+			.menu li {
+        padding: 5px 14px;
+      }
+			.hamburger {
+	     	display: none;
+	     	font-size: 40px;
+	     	user-select: none;
+    	}
+			.big-pic{
+				width: 100%;
+			}		
+			.a-on-big-pic{
+				text-decoration: none;
+				font-family: Sora;
+				background: #bdfff6;
+				color: #e23c52;
+				padding: 20px;
+				border-radius: 50px;
+				position: absolute;
+				top: 500px;
+				font-size: 20px;
+				font-weight: bolder;
+				margin-right: auto;
+				margin-left: auto;
+				left: 0;
+				right: 0;
+				width: 200px;
+				text-align: center;
+				float: center;
+			}
+			.the_top{
+				margin-left: 60px;
+			}
+			.f-my{
+				float: left;
+				width: 200px;
+				height: 200px;
+				object-fit: cover;
+				padding: 10px;
+				border-radius: 50px;
+				transition: 0.3s;
+			}
+			.f-my:hover{
+				box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+				transform: scale(1.1);
+			}
+			.the_bot{
+				display: inline-block;
+			}
+			.card {
+	  		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  		transition: 0.3s;
+	  		width: 218px;
+	  		border-radius: 5px;
+	  		float: left;
+	  		margin:  25px;
+	  		margin-left: 31px;
+			}
+			.card:hover {
+	  		box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+	  		transform: scale(1.1);
+			}
+			.card img{
+	  		border-radius: 5px 5px 0 0;
+	 			 width: 100%; 
+	  	}
+			.container {
+  			padding: 2px 16px;
+ 				padding: 10px;
+			}
+			.card-in-content {
+  			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			  transition: 0.3s;
+			  width: 40%;
+			  float: left;
+			  border-radius: 5px;
+			  margin:  20px;
+			  background-image: "https://static2.bigstockphoto.com/6/2/3/large1500/326028601.jpg";
+			}
+			.card-in-content img{
+	  		border-radius: 5px 5px 0 0;
+	  		width: 100%; 
+	  		object-fit: cover;
+	  		transition: 1s;
+	  		transition-duration: 1.5s;
+			}
+			.container {
+	  		padding: 2px 16px;
+	  		padding: 10px;
+			}
+			.myanmar-title{
+				font-family: Sora;
+				color: #8a6626;
+				margin-left: 50px;
+			}
+			.whole-container{
+				display: inline-block;
+			}
+			.vertical-line-text{
+				margin-left: 530px;
+				padding: 20px;
+				border-left:  3px solid #8a6626;
+				margin-top: 200px;
+			}
+			.ingredients{
+				display: block;
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+				width: 50%;
+				border-radius: 10px;
+				float: right;
+			}
+			.ingredients h1{
+				padding: 10px;
+			}
+			.ingredients ul li{
+				padding: 10px;
+				color: #372800;
+			}
+			.direction{
+				margin: 30px;
+				width: 45%;
+			}
+			.first_h1{
+				text-align: center;
+			}
+			.youtube{
+				display: block;
+				margin-left: 350px;
+			}
+		}
+.youtube{
+	margin-top: 40px;
+	margin-left: 350px;
+}
+	</style>
+</head>
+<body>
+<nav class="navbar">
+     
+         <div class="logo"><img src="BM.png"></div>
+             
+             <ul class="nav-links">
+             
+             <input type="checkbox" id="checkbox_toggle" style="display: none;" />
+             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+             
+             <div class="menu">
+             <li><a href="D:\PBL\For ICT project\images/home.html">Home</a></li>
+             <li><a href="D:\PBL\For ICT project\images/food_recipes_catagories.html">Recipes by catagories</a></li>
+             <li><a href="D:\PBL\For ICT project\images/second_food_receipes.html">Countries' receipes</a></li>
+             <li class="services">
+             <a href="D:\PBL\For ICT project\images/About.html">About</a></li>
+         </div>
+         </ul>
+     </nav>
+<!--<div class="navbar">
+		
+		<img src="BM.png">
+		
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Our reciepe tutorials</a></li>
+			<li><a href="">About</a></li>	
+		</ul>
+
+	</div>
+
+	https://www.tridentseafoods.com/wp-content/uploads/2019/07/7cbe9f3b-2fdb-4aa0-86b0-7f9ea3d8bf9c.jpg-->
+
+	<h1 class="first_h1">Nan Gyi Thoke</h1>
+
+	<div class="card-in-content">
+		  <img src=" " id='image'>
+		  <div class="container">
+		    <h4><b>Nan Gyi Thoke</b></h4> 
+		    
+		  </div>
+	</div>
+
+<div class="vertical-line-text">
+			Nan gyi thoke is an a thoke salad dish in Burmese cuisine, made with thick round rice noodles mixed with specially prepared chicken curry and chili oil. The dish is garnished with toasted chickpea flour, sliced onions, chilis, crispy noodles, slices of hard-boiled egg, fish cakes, and zested with lime or lemon.
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="ingredients">
+
+		<h1>The ingredients</h1>
+
+		<ul>
+
+
+
+			<li><input type="checkbox">
+			<label>Round rice noodle or Udon noodle (half a pack)</label></li>
+
+			
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Boiled egg (1 large egg),Lime or Lemon and Fish sauce</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Roasted peanut powder (2 tsp)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Coriander (1 Stalk)</label></li>
+			
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Cabbage (some slices)</label></li>
+			
+			<li><input type="checkbox" class="the_checkbox">
+			<label>One chicken breast</label></li>
+				
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Oil (3 Tbsp)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Turmeric powder (1/2 tsp)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Salt (1 tsp)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Red chili powder (for color) (1 or 2 tsp)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Shallot (2)</label></li>
+			
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Garlic (5 to 6 gloves)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Tomato (2)</label></li>
+			
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Yellow Crispy Fritter Chips (for garnishing ONLY – Optional)</label></li>
+
+			
+		</ul>
+	</div>
+
+<div class="direction">
+		<h1>Receipe direction</h1>
+		<div>
+			<h3>Cooking the noodles</h3>
+			<p>Boil your noodles in the boiling water and add a little bit of salt.
+			Drain the noodles and wash with cold water. Then code with a drizzle of oil to prevent sticking each other.</p>
+		</div>
+
+		<div>
+			<h3>Cooking the chicken</h3>
+			<p>Dice chicken breasts into small cubes.
+			Add cooking oil into a heated pan and throw chopped shallot and garlic.
+			When you get a nice aroma, put in the diced chicken seasoned with salt and fish salt. Add turmeric and red chili powder. Then toss for a few times.
+			Add chopped tomatoes (without seeds) to the pan, add a little bit of chicken stock, and cook it for 3 to 4 minutes.Now chicken curry sauce will be ready to serve with your noodles.</p>
+		</div>
+
+
+		<div>
+			<h3>Serving Instructions</h3>
+			<p>You can serve this noodle dish just like the way you serve your spaghetti – chicken curry sauce on top of the noodle.
+			After the chicken sauce, add slices of boiled egg, yellow crispy fritters, roasted peanut powder, and some coriander leaves.
+			Finally, drizzle lime and fish sauce. Enjoy!</p>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<div class="youtube">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/RH9CHLpxpVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<br>
+	<br>
+	<br>
+
+<div>
+		<h1>Other featured recipes</h1>
+
+		<div class="a"><a href="Shan noodles.html"><div class="card">
+		  <img src="Shan noodles.jpg" alt="picture" style="height: 179.5px;">
+		  <div class="container">
+		    <h4><b>Shan noodles</b></h4> 
+		    <p>Click for more...</p> 
+		  </div>
+		</div></a></div>
+
+		<div class="b"><a href="Tom Yum Goong.html"><div class="card">
+		  <img src="Tom Yum Goong (Spicy Shrimp Soup).jpg" style="height: 179.5px;">
+		  <div class="container">
+		    <h4><b>Spicy Shrimp Soup</b></h4> 
+		    <p>Click for more...</p> 
+		  </div>
+		</div></a></div>
+
+		<div class="d"><a href="Pozole Rojo.html"><div class="card">
+		  <img src="pozole rojo.jpg" alt="picture" style="height: 179.5px;">
+		  <div class="container">
+		    <h4><b>Pozole Rojo</b></h4> 
+		    <p>Click for more...</p> 
+		  </div>
+		</div></a></div>
+
+
+		<div class="c"><a href="Apple Pie.html"><div class="card">
+		  <img src="apple pie.jpg" alt="picture" style="height: 179.5px;">
+		  <div class="container">
+		    <h4><b>Apple Pie</b></h4> 
+		    <p>Click for more...</p> 
+		  </div>
+		</div></a></div>
+
+				<div class="the_footer">
+
+		<div class="logo">
+			<img src="BM.png" style="background: transparent;">
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<h1>Contact us...</h1>
+		<div class="the_phone">
+		<ion-icon name="call-outline"></ion-icon>
+		<span>Phone - 09-443303313</span>
+		</div>
+
+
+
+		<div class="the_email">
+		<ion-icon name="mail-outline"></ion-icon>
+		<span>E-mail - moepyeepaing@gmail.com</span>
+		</div>
+
+		<br>
+
+		<ul>
+		<h3 style="font-size: 30px; font-weight: bolder;">Quick links</h3>
+		<li><h3><a href="Home.html">Home</a></h3></li>
+		<li><h3><a href="second_food_receipes.html">Recipes by countries</a></h3></li>
+		<li><h3><a href="food_recipes_catagories.html">Recipes by catagories</a></h3></li>
+		<li><h3><a href="About.html">About</a></h3></li>
+		</ul>
+<br>
+<br>
+		<div class="BM"><h3 class="copy" style="text-align:center;">© Copyright 2022| BM All Rights Reserved.</h3></div>
+	</div>
+
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<script type="text/javascript">
+		let image = document.getElementById('image');
+		let images = ['Nan gyi1.jpg', 'Nan gyi2.jpg', 'Nan gyi3.jpg'];
+		setInterval(function(){
+			let random = Math.floor(Math.random() * 3);
+			image.src = images[random];
+		}, 3000);
+
+	</script>
+
+	</div>
+</body>
+</html>

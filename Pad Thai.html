@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="multiple_page.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
+	<link rel="icon" href="BM.png">
+	<title>Pad Thai</title>
+	<style type="text/css">
+		input[type=checkbox]{
+			transform: scale(1.5);
+		}
+	/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+			.card-in-content{
+				width: 100%;
+				margin: 0;
+			}
+			.vertical-line-text{
+				margin-left: 0;
+				margin-top: 600px;
+				width: 95%;
+				padding: 10px;
+			}
+			.direction {
+				float: left;
+				display: block;
+				width: 100%;
+				margin: 0;
+				margin-top: 10px;
+			}
+			.ingredients{
+				width: 100%;
+				display: block;
+				float: left;
+				margin-top: -180px;
+			}
+			.card{
+				display: block;
+				width: 40%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-left: 30px;
+			}
+			.youtube{
+				display: none;
+			}
+		} 
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+			.card-in-content{
+				width: 50%;
+				margin-left: 150px;
+			}
+			.vertical-line-text{
+				margin-left: 0;
+				width: 100%;
+				margin-top: 470px;
+				padding: 10px;
+			}
+			.direction {
+				width: 50%;
+				margin: 5px;
+				margin-top: -120px;
+			}
+			.ingredients{
+				width: 50%;
+				margin-top: -120px;
+			}
+			.card{
+				display: inline-block;
+				width: 40%;
+			}
+			.youtube{
+				display: none;
+			}
+		} 
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+			.card-in-content{
+				width: 50%;
+				margin-left: 150px;
+			}
+			.vertical-line-text{
+				margin-left: 0;
+				width: 98%;
+				margin-top: 540px;
+				padding: 10px;
+			}
+			.direction {
+				width: 50%;
+				margin: 5px;
+				margin-top: -120px;
+			}
+			.ingredients{
+				width: 50%;
+				margin-top: -120px;
+			}
+			.card{
+				display: block;
+				width: 35%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-left: 60px;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 600px) {
+			.vertical-line-text{
+				margin-top: 590px;
+				width: 98%;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px){
+			.vertical-line-text{
+				margin-top: 530px;
+				width: 98%;
+			}
+			.card{
+				display: block;
+				width: 30%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-left: 90px;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 768px) {
+			.vertical-line-text{
+				margin-top: 630px;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 850px) {
+			.card{
+				width: 20%;
+				margin-left: auto;
+				margin-left: auto;
+				display: block;
+				margin-left: 34px;
+			}
+			.card-in-content{
+				margin-left: 220px;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+			.card-in-content{
+				width: 40%;
+				margin-left: 30px;
+			}
+			.vertical-line-text{
+				margin-top: 700px;
+				width: 50%;
+				margin-left: 470px;
+				margin-bottom: 100px;
+				margin-top: 200px;
+			}
+			.card{
+				width: 20%;
+			}
+			.youtube{
+				display: none;
+			}
+		}
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1100px) {
+			*{
+				background: #efc8b1;
+				color: #8a6626;
+				font-family: Sora;
+			}
+			a {
+        text-decoration: none;
+      }
+      li {
+        ist-style: none;
+      }
+			.navbar {
+	      display: flex;
+	      align-items: center;
+	      justify-content: space-between;
+	      padding: 20px;
+      }
+      .nav-links a {
+        color: #8a6626;
+      }
+      .logo img{
+        width: 200px;
+        display: inline-block;
+        float: left;
+      }
+      .menu {
+       	display: flex;
+        gap: 1em;
+        font-size: 18px;
+      }
+			.menu li a:hover{
+        color: #A32F5D;
+    	}
+			.menu li {
+        padding: 5px 14px;
+      }
+			.hamburger {
+	     	display: none;
+	     	font-size: 40px;
+	     	user-select: none;
+    	}
+			.big-pic{
+				width: 100%;
+			}		
+			.a-on-big-pic{
+				text-decoration: none;
+				font-family: Sora;
+				background: #bdfff6;
+				color: #e23c52;
+				padding: 20px;
+				border-radius: 50px;
+				position: absolute;
+				top: 500px;
+				font-size: 20px;
+				font-weight: bolder;
+				margin-right: auto;
+				margin-left: auto;
+				left: 0;
+				right: 0;
+				width: 200px;
+				text-align: center;
+				float: center;
+			}
+			.the_top{
+				margin-left: 60px;
+			}
+			.f-my{
+				float: left;
+				width: 200px;
+				height: 200px;
+				object-fit: cover;
+				padding: 10px;
+				border-radius: 50px;
+				transition: 0.3s;
+			}
+			.f-my:hover{
+				box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+				transform: scale(1.1);
+			}
+			.the_bot{
+				display: inline-block;
+			}
+			.card {
+	  		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  		transition: 0.3s;
+	  		width: 218px;
+	  		border-radius: 5px;
+	  		float: left;
+	  		margin:  25px;
+	  		margin-left: 31px;
+			}
+			.card:hover {
+	  		box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+	  		transform: scale(1.1);
+			}
+			.card img{
+	  		border-radius: 5px 5px 0 0;
+	 			 width: 100%; 
+	  	}
+			.container {
+  			padding: 2px 16px;
+ 				padding: 10px;
+			}
+			.card-in-content {
+  			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			  transition: 0.3s;
+			  width: 40%;
+			  float: left;
+			  border-radius: 5px;
+			  margin:  20px;
+			  background-image: "https://static2.bigstockphoto.com/6/2/3/large1500/326028601.jpg";
+			}
+			.card-in-content img{
+	  		border-radius: 5px 5px 0 0;
+	  		width: 100%; 
+	  		object-fit: cover;
+	  		transition: 1s;
+	  		transition-duration: 1.5s;
+			}
+			.container {
+	  		padding: 2px 16px;
+	  		padding: 10px;
+			}
+			.myanmar-title{
+				font-family: Sora;
+				color: #8a6626;
+				margin-left: 50px;
+			}
+			.whole-container{
+				display: inline-block;
+			}
+			.vertical-line-text{
+				margin-left: 530px;
+				padding: 20px;
+				border-left:  3px solid #8a6626;
+				margin-top: 200px;
+			}
+			.ingredients{
+				display: block;
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+				width: 50%;
+				border-radius: 10px;
+				float: right;
+			}
+			.ingredients h1{
+				padding: 10px;
+			}
+			.ingredients ul li{
+				padding: 10px;
+				color: #372800;
+			}
+			.direction{
+				margin: 30px;
+				width: 45%;
+			}
+			.first_h1{
+				text-align: center;
+			}
+			.youtube{
+				display: block;
+				margin-left: 350px;
+			}
+		}
+.youtube{
+	margin-left: 350px;
+} 	
+	</style>
+</head>
+<body>
+
+<nav class="navbar">
+     
+         <div class="logo"><img src="BM.png"></div>
+             
+             <ul class="nav-links">
+             
+             <input type="checkbox" id="checkbox_toggle" style="display: none;" />
+             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+             
+             <div class="menu">
+             <li><a href="D:\PBL\For ICT project\images/home.html">Home</a></li>
+             <li><a href="D:\PBL\For ICT project\images/food_recipes_catagories.html">Recipes by catagories</a></li>
+             <li><a href="second_food_receipes.html">Our receipes</a></li>
+             <li class="services">
+             <a href="/">About</a></li>
+         </div>
+         </ul>
+     </nav>
+<!--<div class="navbar">
+		
+		<img src="BM.png">
+		
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Our reciepe tutorials</a></li>
+			<li><a href="">About</a></li>	
+		</ul>
+
+	</div>
+
+	https://www.tridentseafoods.com/wp-content/uploads/2019/07/7cbe9f3b-2fdb-4aa0-86b0-7f9ea3d8bf9c.jpg-->
+
+	<h1 class="first_h1">Pad Thai</h1>
+
+	<div class="card-in-content">
+		  <img src=" " id='image'>
+		  <div class="container">
+		    <h4><b>Pad Thai</b></h4> 
+		    
+		  </div>
+	</div>
+
+<div class="vertical-line-text">
+			Pad thai, phat thai, or phad thai, is a stir-fried rice noodle dish commonly served as a street food in Thailand as part of the country's cuisine. It is typically made with rice noodles, shrimp, peanuts, a scrambled egg, and bean sprouts, among other vegetables. The ingredients are fried in a wok.
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="ingredients">
+
+		<h1>The ingredients</h1>
+
+		<ul>
+
+
+
+			<li><input type="checkbox">
+			<label>2 small garlic cloves (6g)</label></li>
+
+			
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Rice noodles</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Protein(shrimp, beef, pork, tofu)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Veggies(carrots, sliced green onions)</label></li>
+			
+			<li><input type="checkbox" class="the_checkbox">
+			<label>lots of freshly minced garlic</label></li>
+			
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Eggs</label></li>
+				
+			<li><input type="checkbox" class="the_checkbox">
+			<label>toppings(for the decoration)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>tamarind concentrate (for the decoration)</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Brown sugar</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Fish sauce</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Soy sauce</label></li>
+			
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Lime juice</label></li>
+
+			<li><input type="checkbox" class="the_checkbox">
+			<label>Curshed red pepper flakes</label></li>
+
+			
+		</ul>
+	</div>
+
+<div class="direction">
+		<h1>Receipe direction</h1>
+		<div>
+			<h3>Step 1</h3>
+			<p>Make the sauce. First things first — go ahead and prep the sauce by whisking all of the ingredients together (or shaking them in a jar) until combined.Cook the noodles. Next, go ahead and heat your water and cook the noodles al dente according to the package instructions, then drain the excess water. If your noodles finish earlier than your stir-fry, I recommend rinsing them briefly with some lukewarm water and tossing them with a drizzle of oil to prevent them from sticking while they wait.</p>
+		</div>
+
+		<div>
+			<h3>Step 2</h3>
+			<p>Cook the protein, veggies and eggs. Meanwhile, go ahead and begin your stir-fry. First, sauté your protein of choice until cooked through, then transfer it to a clean plate and set it aside. Next, sauté the veggies until crisp-tender. Then push them to one side of the pan and briefly scramble the eggs in the other half of the pan until cooked.</p>
+		</div>
+
+
+		<div>
+			<h3>Step 3</h3>
+			<p>Put it all together. Then add everything back in with the eggs and veggies — the cooked noodles, cooked chicken, sauce and green onions — and give the mixture a good toss until everything is evenly coated in the sauce.
+			Serve. Then serve the noodles immediately while they are nice and hot, garnished with lots of toppings and fresh lime wedges for squeezing.</p>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<div class="youtube">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/F5-nfxQjfZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<br>
+	<br>
+	<br>
+
+<div>
+		<h1>Other featured recipes</h1>
+
+		<div class="a"><a href="Apple Pie.html"><div class="card">
+		  <img src="apple pie.jpg" alt="picture" style="height: 179.5px;">
+		  <div class="container">
+		    <h4><b>Apple Pie</b></h4> 
+		    <p>Click for more...</p> 
+		  </div>
+		</div></a></div>
+
+		<div class="b"><a href="Shan noodles.html"><div class="card">
+		  <img src="Shan noodles.jpg" style="height: 179.5px;">
+		  <div class="container">
+		    <h4><b>Shan noodles</b></h4> 
+		    <p>Click for more...</p> 
+		  </div>
+		</div></a></div>
+
+		<div class="d"><a href="Som Tum.html"><div class="card">
+		  <img src="som tum2.jpg" alt="picture" style="height: 179.5px;">
+		  <div class="container">
+		    <h4><b>Som Tum</b></h4> 
+		    <p>Click for more...</p> 
+		  </div>
+		</div></a></div>
+
+
+		<div class="c"><a href="coconut_milk_noodles.html"><div class="card">
+		  <img src="coco2.jpg" alt="picture" style="height: 179.5px;">
+		  <div class="container">
+		    <h4><b>Coconut Milk Noodles</b></h4> 
+		    <p>Click for more...</p> 
+		  </div>
+		</div></a></div>
+
+				<div class="the_footer">
+
+		<div class="logo">
+			<img src="BM.png" style="background: transparent;">
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<h1>Contact us...</h1>
+		<div class="the_phone">
+		<ion-icon name="call-outline"></ion-icon>
+		<span>Phone - 09-443303313</span>
+		</div>
+
+
+
+		<div class="the_email">
+		<ion-icon name="mail-outline"></ion-icon>
+		<span>E-mail - moepyeepaing@gmail.com</span>
+		</div>
+
+		<br>
+
+		<ul>
+		<h3 style="font-size: 30px; font-weight: bolder;">Quick links</h3>
+		<li><h3><a href="Home.html">Home</a></h3></li>
+		<li><h3><a href="second_food_receipes.html">Recipes by countries</a></h3></li>
+		<li><h3><a href="food_recipes_catagories.html">Recipes by catagories</a></h3></li>
+		<li><h3><a href="About.html">About</a></h3></li>
+		</ul>
+<br>
+<br>
+		<div class="BM"><h3 class="copy" style="text-align:center;">© Copyright 2022| BM All Rights Reserved.</h3></div>
+	</div>
+
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<script type="text/javascript">
+		let image = document.getElementById('image');
+		let images = ['pad thai.jpg', 'pad thai1.jpg', 'pad thai2.jpg'];
+		setInterval(function(){
+			let random = Math.floor(Math.random() * 3);
+			image.src = images[random];
+		}, 3000);
+
+	</script>
+
+	</div>
+</body>
+</html>
